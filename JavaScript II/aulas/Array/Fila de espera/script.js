@@ -59,6 +59,7 @@ do {
 
 } while (opcao !== 4);
 
+
 //Adicionando elementos:
 // push: Adiciona um elemento no final do array e devolve o novo tamanho do array
 // unshift: Adiciona um elemento no começo do array e devolve o novo tamanho do array
