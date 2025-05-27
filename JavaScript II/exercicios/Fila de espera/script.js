@@ -1,19 +1,7 @@
 lista_de_pacientes = [];
 
 do {
-    let menu = "Fila de Espera:\n";
-    if (lista_de_pacientes.length === 0) {
-        menu += "A fila está vazia.\n";
-    } else {
-        for (let i = 0; i < lista_de_pacientes.length; i++) {
-            menu += (i + 1) + "º " + lista_de_pacientes[i] + "\n";
-        }
-    }
-    menu += "\nEscolha uma opção:\n";
-    menu += "1 - Novo Paciente\n";
-    menu += "2 - Consultar Paciente\n";
-    menu += "3 - Listar Pacientes\n";
-    menu += "4 - Sair";
+    
 
     opcao = parseInt(prompt(menu));
 
