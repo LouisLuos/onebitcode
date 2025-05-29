@@ -13,6 +13,6 @@ function fatorial(num) {
   }
 }
 
-console.log("\n!5 = " + fatorial(5))
+console.log("\n!5 = " + fatorial(5)) 
 console.log("\n!0 = " + fatorial(0))
 console.log("\n!9 = " + fatorial(9))
