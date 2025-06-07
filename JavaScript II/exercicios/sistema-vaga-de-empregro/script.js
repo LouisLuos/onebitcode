@@ -69,6 +69,30 @@ function visualizarVaga() {
 }
 
 
-criar_vaga()
-listarVagas()
-visualizarVaga()
+function inscreverCandidato () {
+    const nomeCandidato = prompt("Qual seu nome?")
+    let indiceVaga = parseInt(prompt("Qual indice da vaga deseja buscar?"))
+    if (isNaN(indiceVaga)){
+        alert("O número não é válido")
+    }
+    const indiceArray = indiceVaga - 1
+    const vagaEncontrada = vagas[indiceArray]
+
+    if (!vagaEncontrada) {
+        alert("Vaga inválida, verifique o indice digitado!")
+        return
+    }
+
+    const confirmacao = confirm(
+        "Deseja confirmar a inscrição para a vaga?\n\n" +
+        "Vaga: " + vagaEncontrada.nome + "\n" +
+        "Descrição: " + vagaEncontrada.descricao
+    )
+
+    if (confirmacao) {
+        vagaEncontrada.candidatos.push(nomeCandidato)
+        alert("Candidato cadastrado com sucesso")
+    } else {
+        alert("Candidato não foi cadastrado")
+    }
+}
