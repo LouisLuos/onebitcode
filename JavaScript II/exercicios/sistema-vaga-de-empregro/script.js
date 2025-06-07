@@ -96,3 +96,80 @@ function inscreverCandidato () {
         alert("Candidato não foi cadastrado")
     }
 }
+
+
+function excluirVaga () {
+    let indiceVaga = parseInt(prompt("Digite o indíce da vaga que desjea excluir"))
+    const indiceArray = indiceVaga - 1
+    const vagaExcluir = vaga[indiceArray]
+
+    if (!vagaExcluir) { 
+        alert("Essa vaga não existe, verifique novamente!")
+        return
+    }
+
+        const confirmacao = confirm(
+        "Tem certeza que deseja excluir a vaga abaixo?\n\n" +
+        `Índice: ${vagaExcluir}\n` +
+        `Nome: ${vagaExcluir.nome}\n` +
+        `Descrição: ${vagaExcluir.descricao}`
+    )
+
+    if (confirmacao) {
+        vagas.splice(indiceVaga, 1)
+        alert("Vaga excluída com sucesso")
+    } else {
+        alert("Vaga não exlcuída")
+    }
+
+}
+
+
+
+function exibirMenu() {
+  return prompt(
+    "Sistema de Vagas de Emprego\n\n" +
+    "Escolha uma opção:\n" +
+    "1. Listar vagas disponíveis\n" +
+    "2. Criar uma nova vaga\n" +
+    "3. Visualizar uma vaga\n" +
+    "4. Inscrever candidato em uma vaga\n" +
+    "5. Excluir uma vaga\n" +
+    "6. Sair"
+  );
+}
+
+
+function executar() {
+  let opcao = "";
+
+  do {
+    opcao = exibirMenu();
+
+    switch (opcao) {
+      case "1":
+        listarVagas();
+        break;
+      case "2":
+        criar_vaga();
+        break;
+      case "3":
+        visualizarVaga();
+        break;
+      case "4":
+        inscreverCandidato();
+        break;
+      case "5":
+        excluirVaga();
+        break;
+      case "6":
+        alert("Saindo do sistema...");
+        break;
+      default:
+        alert("Opção inválida. Tente novamente.");
+    }
+  } while (opcao !== "6");
+}
+
+
+executar();
