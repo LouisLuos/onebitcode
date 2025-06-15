@@ -2,39 +2,24 @@
 
 function adicionarJogador () {
     
-    const inputPosicao = document.createElement("input")
-    inputPosicao.type = "text"
-    inputPosicao.name = "input-posicao"
-    inputPosicao.placeholder = "Posição"
+    if (confirm("Deseja confirmar?")) {
 
-    const inputNomeJogador = document.createElement("input")
-    inputNomeJogador.type = "text"
-    inputNomeJogador.name = "Nome"
-    inputNomeJogador.placeholder = "Nome"
+    const posicaoJogador = document.getElementById("input-posicao").value
+    const nomeJogador = document.getElementById("input-nome").value
+    const numeroJogador = document.getElementById("input-numero").value
 
-
-    const inputNumeroJogador = document.createElement("input")
-    inputNumeroJogador.type = "number"
-    inputNumeroJogador.name = "input-numero"
-    inputNumeroJogador.placeholder = "Número do jogador"
-
-
+    const ulEscalados = document.getElementById("ul-time")
     
-    const liTime = document.createElement("li")
-    liTime.append(inputPosicao, inputNomeJogador, inputNumeroJogador)
+    const newLi = document.createElement("li")
+
+    newLi.innerHTML = `<p>Posição: ${posicaoJogador}</p> \n <p>Nome: ${nomeJogador}</p> \n <p>Número: ${numeroJogador}</p> \n`
+
+    ulEscalados.appendChild(newLi)
     
 
-
-    const ul = document.getElementById("ul-time")
-    ul.appendChild(liTime)
-
-    
-    
-
-    
-
-
-    
-
+    document.getElementById('input-posicao').value = ''
+    document.getElementById('input-nome').value = ''
+    document.getElementById('input-numero').value = ''
+    }
     
 }
