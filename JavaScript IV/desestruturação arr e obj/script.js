@@ -1,7 +1,7 @@
 const person = {
   name: "Luke",
   job: "Farmer",
-  parents: ["Anakin", "Padme"]
+  parents: ["Anakin", "Padme"],
 }
 
 const name = person.name
@@ -20,10 +20,12 @@ function createUser({ name, job, parents }) {
     id,
     name,
     job,
-    parents
+    parents,
+    
   }
 }
 
 const luke = createUser(person)
 
 console.log(luke)
+
