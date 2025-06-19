@@ -20,7 +20,7 @@ const subtract = (a, b) => a - b
 
 console.log(`Subtração: ${subtract(5, 2)}`)
 
-const double = n => `O dobro de ${n} é ${n * 2}`
+const double = n => `O dobro de ${n} é ${n * 2}` //quando eu tenho uma função com apenas 1 parametro, nao preciso por parenteses
 
 const number = 21
 console.log(`Dobro: ${double(number)}`)
