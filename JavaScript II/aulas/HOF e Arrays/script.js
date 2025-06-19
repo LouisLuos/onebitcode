@@ -19,6 +19,7 @@ for (let i = 0; i < personagens.length; i++) {
 // map: permite obter um novo array a partir de um array existenste
 const nomess = personagens.map(function (personagem) {
   return personagem.nome
+  //ele vai adicionar ao meu array tudo que eu retornar ou seja der Return
 })
 
 
@@ -45,13 +46,13 @@ const orcss = personagens.filter(function (personagem) {
 
 
 
-let nivelTotall = 0
+let nivelTotal = 0
 for (let i = 0; i < personagens.length; i++) {
   nivelTotal += personagens[i].nivel
 }
 // reduce: serve para reduzir um array existente a um valor final qualquer,
 // passando um valor entre cada iteração sobre esse array e retornando ele no final
-const nivelTotal = personagens.reduce(function (acumulador, personagem) {
+const nivelTotall = personagens.reduce(function (acumulador, personagem) {
   return acumulador + personagem.nivel
 }, 0)
 
@@ -63,7 +64,7 @@ const racas = personagens.reduce(function (acumulador, personagem) {
   }
   return acumulador
 }, {})
-
+console.log(racas)
 
 
 
