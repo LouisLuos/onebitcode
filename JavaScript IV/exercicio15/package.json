@@ -1,15 +1,14 @@
 {
-  "name": "npx-npm",
+  "name": "exercicio15",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "hello": "hello-world-npm",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Luiz",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "hello-world-npm": "^1.1.1"
+    "dayjs": "^1.11.13"
   }
 }
