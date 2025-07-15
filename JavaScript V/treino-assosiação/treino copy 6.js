@@ -1,20 +1,30 @@
-class Author {
-    constructor (name, bio) {
-        this.name = name
-        this.bio = bio
+class Galaxy {
+    constructor (galaxia) {
+        this.galaxia = galaxia
+        this.listaDePlanetas = []
+    }
+    
+    adicionarPlaneta(planeta) {
+        this.listaDePlanetas.push(planeta)
+    }
+
+    listarPlanetas() { 
+        return this.listaDePlanetas.map(e => e.planeta)
     }
 }
 
-class Post {
-    constructor (tittle, content, author) {
-        this.tittle = tittle
-        this.content = content
-        this.author = author
+class Planeta {
+    constructor (planeta) {
+        this.planeta = planeta
     }
 }
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
+const galaxia1 = new Galaxy ("Via láceta")
+const planeta1 = new Planeta ("Terra")
 
-console.log(Post)
+galaxia1.adicionarPlaneta(planeta1)
+galaxia1.adicionarPlaneta(planeta1)
+galaxia1.adicionarPlaneta(planeta1)
+const nomePlanetas = galaxia1.listarPlanetas()
+console.log(`A galáxia ${galaxia1.galaxia} tem o planeta ${nomePlanetas.join(', ')}`)
+console.log(galaxia1)
