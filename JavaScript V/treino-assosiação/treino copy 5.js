@@ -1,20 +1,27 @@
-class Author {
-    constructor (name, bio) {
+class Customer {
+    constructor (name) {
         this.name = name
-        this.bio = bio
+        this.totalOrder = []
+    }
+    addOrder (order) {
+        this.totalOrder.push(order)
+    }
+
+    getTotalSpent() {
+    return this.totalOrder.reduce((sum, order) => sum + order.value, 0);
+  }
+}
+
+class Order {
+    constructor (order, value) {
+        this.order = order
+        this.value = value
     }
 }
 
-class Post {
-    constructor (tittle, content, author) {
-        this.tittle = tittle
-        this.content = content
-        this.author = author
-    }
-}
+const cliente1 = new Customer("Luiz")
+cliente1.addOrder(new Order("X-bacon", 25))
+cliente1.addOrder(new Order("X-egg", 20))
+console.log(cliente1)
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
-
-console.log(Post)
+console.log(`O valor total dos pedidos de ${cliente1.name}, : ${cliente1.getTotalSpent()}R$`)
