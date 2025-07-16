@@ -1,20 +1,37 @@
-class Author {
-    constructor (name, bio) {
-        this.name = name
-        this.bio = bio
+class Shape {
+    
+
+    getArea() {
+        return 0
     }
 }
 
-class Post {
-    constructor (tittle, content, author) {
-        this.tittle = tittle
-        this.content = content
-        this.author = author
+class Square extends Shape {
+
+    constructor(side){
+        super()
+        this.side = side
+    }
+
+    getArea() {
+        return this.side * this.side
     }
 }
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
 
-console.log(Post)
+class Circle extends Shape {
+    constructor(radius) {
+        super()
+        this.radius = radius
+    }
+
+    getArea() {
+        return Math.PI * this.radius * this.radius
+    }
+}
+
+const quadrado1 = new Square (10)
+console.log(quadrado1.getArea())
+
+const circulo1 = new Circle (5)
+console.log(circulo1.getArea().toFixed(2))
