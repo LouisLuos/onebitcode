@@ -1,20 +1,38 @@
-class Author {
-    constructor (name, bio) {
-        this.name = name
-        this.bio = bio
+class Vehicle {
+    constructor(brand, model) {
+        this.brand = brand
+        this.model = model
+
     }
 }
 
-class Post {
-    constructor (tittle, content, author) {
-        this.tittle = tittle
-        this.content = content
-        this.author = author
+class Car extends Vehicle {
+    constructor(brand, model, doors) {
+        super(brand, model)
+        this.doors = doors
+    }
+
+    getDoors() {
+        return this.doors
     }
 }
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
 
-console.log(Post)
+class Motorcycle extends Vehicle {
+    constructor(brand, model, cylinders) {
+        super(brand, model)
+        this.cylinders = cylinders 
+    }
+
+    getCilinders() {
+        return this.cylinders
+    }
+}  
+
+const cb600 = new Motorcycle("Honda", "Cb600f", 600)
+const audia3 = new Car ("Audi", "A3", 4)
+
+console.log(cb600)
+console.log(cb600.getCilinders())
+console.log(audia3)
+console.log(audia3.getDoors())
