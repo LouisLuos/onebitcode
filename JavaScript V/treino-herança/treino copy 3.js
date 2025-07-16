@@ -1,20 +1,28 @@
-class Author {
-    constructor (name, bio) {
+class Employee {
+    constructor(name, salary) {
         this.name = name
-        this.bio = bio
+        this.salary = salary
     }
 }
 
-class Post {
-    constructor (tittle, content, author) {
-        this.tittle = tittle
-        this.content = content
-        this.author = author
+class Manager extends Employee {
+    constructor(name, salary, departament) {
+        super(name, salary) 
+        this.departament = departament
     }
 }
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
+class Developer extends Employee {
+    constructor(name, salary, programmingLanguage) {
+        super(name, salary) 
+        this.programmingLanguage = programmingLanguage 
+    }
+}
 
-console.log(Post)
+const chefe = new Manager("Lucas", 8000, "TI")
+const developer = new Developer ("Luiz", 4000, "JavaScript")
+
+console.log(Employee)
+console.log(chefe)
+console.log(developer)
+
