@@ -1,0 +1,52 @@
+### Flags
+
+- **g**  global
+- **i**  case insensitive
+- **m**  multiline
+- **s**  single line
+
+### Caracteres Especiais
+
+- **^**  encontra a string inicial com a caracteristica
+- **$**  encontra a string no final da string  
+- **|**  ou (significa um ou) a | b
+- **+**  ocorrências em sequência ex: *aaaa*, b*aaa*b*aa*
+- **?**  caractere opcional (antes do sinal)
+- *****  ocorrências em sequência de forma opcional
+- **.**  caractere qualquer ex: a. arroz *ar* 
+- **\**  escapa um caractere especial
+- **\w**  qualquer caractere alfanumérico    /W encontra tudo que não é uma alfanumérico / undescore ( _ )
+- **\d**  qualquer caractere numérico       /D encontra tudo que não é número
+- **\s**  espaços
+- **\W**  qualquer caractere que não é alfanumérico
+- **\D**  qualquer caractere que não é numérico
+- **\S**  qualquer caractere que não é espaço
+- **{}**  encontra uma quantidade de caracteres entre um mínimo e um máximo, ex: quero encontrar o caracter a em no maximo 2 sequencias = a{1, 2} a{1, }
+- **[ ]**  agrupamento de regras por exemplo, quero encontrar os caracteres abc globalmente > [abc] / [a-z]
+- **( )**  agrupamento de captura
+
+### Look Ahead e Look Behind
+
+- **(?=)**  positive look ahead: encontra termos que precedem um determinado termo ex: dolor *or* or(?=\s)
+- **(?!)**  negative look ahead: encontra termos que não precedem um determinado termo
+- **(?<=)**  positive look behind: encontra termos que são precedidos por um determinado termo
+- **(?<!)**  negative look behind: encontra termos que não são precedidos por um determinado termo
+
+
+// Regex Lookarounds - "Espiões" que verificam sem capturar.
+
+// --- LOOKAHEAD (olha para frente) ---
+
+// **(?=...)** Positive Lookahead: Encontra um termo que é SEGUIDO por outro.
+//             Ex: q(?=u) => Encontra 'q' em "quadro", mas não em "cinco".
+
+// **(?!...)** Negative Lookahead: Encontra um termo que NÃO é SEGUIDO por outro.
+//             Ex: q(?!u) => Encontra 'q' em "cinco", mas não em "quadro".
+
+// --- LOOKBEHIND (olha para trás) ---
+
+// **(?<=...)** Positive Lookbehind: Encontra um termo que é PRECEDIDO por outro.
+//             Ex: (?<=R\$)100 => Encontra '100' em "R$100", mas não em "US$100".
+
+// **(?<!...)** Negative Lookbehind: Encontra um termo que NÃO é PRECEDIDO por outro.
+//             Ex: (?<!R\$)100 => Encontra '100' em "US$100", mas não em "R$100".
