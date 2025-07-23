@@ -1,5 +1,5 @@
-const numeros = [10, 25, 30, 5, 12]
+const usuarios = [{ nome: 'Alice', idade: 25 }, { nome: 'Bruno', idade: 30 }, { nome: 'Clara', idade: 28 }];
 
-const dobro = numeros.map(index => index * 2)
-console.log(numeros)
-console.log(dobro)
+const apenasNomes = usuarios.map(index => index.nome)
+
+console.log(apenasNomes)
