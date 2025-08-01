@@ -1,20 +1,24 @@
-class Author {
-    constructor (name, bio) {
-        this.name = name
-        this.bio = bio
-    }
-}
-
 class Post {
-    constructor (tittle, content, author) {
+    constructor(tittle, content) {
         this.tittle = tittle
         this.content = content
-        this.author = author
+        this.tagsPost = []
+    }
+    addTag(tag) {
+        this.tagsPost.push(tag)
+    }
+
+}
+
+class Tag {
+    constructor(nameTag) {
+        this.nameTag = nameTag
     }
 }
 
-const autor1 = new Author ("Luiz", "Programador Back-end")
-const post1 = new Post ("Aprendendo JS", "POO", autor1)
-console.log(`O post ${post1.tittle} foi escrito por ${post1.author.name}`)
+const post1 = new Post ("Aprendendo JS", "É bem complicadinho POO")
+post1.addTag(new Tag ("JavaScript"))
+post1.addTag(new Tag ("POO"))
 
-console.log(Post)
+console.log(post1)
+
