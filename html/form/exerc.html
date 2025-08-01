@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio forms</title>
+</head>
+<body>
+    <h1>Exercicio forms</h1>
+    <form action="">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="atuacao" placeholder="Digite seu nome" required><br><br>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="atuacao" placeholder="Digite seu email" required><br><br>
+        <label for="telefone">Telefone</label><br>
+        <input type="tel" id="telefone" name="atuacao" placeholder="Digite seu telefone" required><br><br>
+        <label>Área de atuação:</label><br>
+        <input type="radio" name="atuacao" id="desenvolvimento" value="desenvolvimento">
+        <label for="desenvolvimento">Desenvolvimento </label>
+        <input type="radio" name="atuacao" id="qa" value="qa">
+        <label for="qa">QA </label>
+        <input type="radio" name="atuacao" id="add" value="ADD">
+        <label for="add">Análise de dados </label>
+        <input type="radio" name="atuacao" id="infra" value="infra">
+        <label for="infra">Infraestutura </label>
+        <br><br>
+        <label for="observacao">Observações:</label><br>
+        <textarea name="observacao" id="observacao" placeholder="Escreva algo que queira" cols="20" rows="8"></textarea><br><br>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">Desejo receber informações por email</label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
