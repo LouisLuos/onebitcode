@@ -40,7 +40,7 @@ header {
 }
 
 .button {
-    background-color: rgb(1, 151, 205);
+    background-color: #0197cd;
     color: white;
     width: 8.5rem;
     height: 2.5rem;
@@ -63,4 +63,8 @@ footer {
     text-align: center;
     padding: 2rem;
     
+}
+
+.button:hover {
+    background-color:rgb(37, 98, 172);
 }
