@@ -1,1 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    font-family: "Sansation", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    margin: 1.0rem;
+}
+
+.top-1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.bottom-1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.buttons {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.item {
+    padding: 1rem;
+}
+
+.button-diferente {
+    background-color: black;
+    color: white;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(1, 151, 205);
+    color: white;
+    width: 8.5rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.image-1 {
+    width: 33%;
+    height: 33%;
+}
+
+.buttons > .button, .button-diferente {
+    margin-left: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    
+}
