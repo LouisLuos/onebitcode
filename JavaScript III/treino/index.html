@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pipipi popopo</title>
+    <script>
+        function adicionarItem() {
+            const ul = document.getElementById("minha-lista")
+            const newLi = document.createElement("li")
+            newLi.textContent = ("Novo item")
+            ul.appendChild(newLi)
+        }
+    </script>
+</head>
+<body>
+    <ul id="minha-lista">
+        <li>Item 1</li>
+    </ul>
+<button onclick="adicionarItem()">Adicionar Item</button>
+</body>
+</html>
