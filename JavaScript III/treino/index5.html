@@ -8,6 +8,9 @@
         function adicionarTextoDoInput () {
         input = document.getElementById("campo-texto")
         const valueInput = input.value 
+        if (valueInput === "") {
+            alert("insira um valor válido")
+        }
         const newLi = document.createElement("li")
         newLi.textContent = valueInput
         const ul = document.getElementById("lista-input")
