@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function removerUltimo () {
+            const ul = document.getElementById("lista-remocao")
+            ul.lastElementChild.remove()
+        }
+
+        function adicionarEelemento() {
+            const ul = document.getElementById("lista-remocao")
+            const li = document.createElement("li")
+            li.textContent = "testinhobb"
+
+            ul.appendChild(li)
+        }
+    </script>
+</head>
+<body>
+    <ul id="lista-remocao">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+<button onclick="removerUltimo()">Remover Último</button>
+<button onclick="adicionarEelemento()">Adicionar Último</button>
+</body>
+</html>
