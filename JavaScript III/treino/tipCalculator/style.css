@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container {
+    height: 40vh;
+    width: 40vh;
+    background-color: gray;
+    text-align: center;
+}
+
+h1 {
+    padding: 4rem;
+}
