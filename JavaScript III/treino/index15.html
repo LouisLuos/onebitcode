@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Nome:</label>
+        <input type="text" class="nome-input">
+        <button onclick="pegarValor(this.parentNode)">Pegar Nome</button>
+    </div>
+    <script>
+        function pegarValor(elementoPai) {
+            const valueInput = elementoPai.querySelector(".nome-input").value
+            alert(valueInput)
+            elementoPai.querySelector(".nome-input").value = ""
+        }
+    </script>
+</body>
+</html>
