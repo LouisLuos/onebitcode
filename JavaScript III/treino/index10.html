@@ -6,14 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>Texto aleatório.</p>
-        <a href="#" onclick="ocultarPai(this.parentNode)">Remover este card</a>
-    </div>
-
+    <p onclick="mudarPropriaCor(this)">Clique diretamente em mim</p>
     <script>
-        function ocultarPai(elementoPai) {
-            elementoPai.style.display = 'none'
+        function mudarPropriaCor(elemento) {
+            elemento.style.color = 'blue'
         }
     </script>
 </body>
