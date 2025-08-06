@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="textos">
+        <p>Primeiro parágrafo.</p>
+        <p>Segundo parágrafo.</p>
+        <p>Terceiro parágrafo.</p>
+    </div>
+
+    <script>
+        const div = document.getElementById("textos")
+            
+        const marcaParagrafo = div.addEventListener("click", (ev) => {
+             console.log("Alvo (target):", ev.target); // Vai mostrar o <p> clicado
+            console.log("Ouvinte (currentTarget):", ev.currentTarget); // Vai mostrar a <div>
+            const divPai = ev.target
+            divPai.textContent = `${divPai.textContent} (clicado)`
+            
+            // const p1 = divPai.children[0]
+            // const p2 = divPai.children[1]
+            // const p3 = divPai.children[2]
+            // if (divPai.children[0] === p1) {
+            //     console.log(p1)
+            // }
+        })
+
+    </script>
+</body>
+</html>

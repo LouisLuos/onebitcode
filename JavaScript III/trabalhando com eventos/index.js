@@ -1,18 +1,26 @@
 const button = document.getElementById("register-button")
+const buttonRemove = document.getElementById("register-remove")
 
 function dados (ev) {
-    console.log(ev.type)
-    console.log(ev.currentTarget.parentNode.children.username.value)
-    console.log(ev.currentTarget.parentNode.children.password.value)
-    console.log(ev.currentTarget.parentNode.children.passwordConfirmation.value)
+    const formNode = ev.currentTarget.parentNode;
+
+  
+  const username = formNode.querySelector('#username').value;
+  const password = formNode.querySelector('#password').value;
+  const passwordConfirmation = formNode.querySelector('#passwordConfirmation').value;
+
+  console.log("Dados capturados:");
+  console.log({ username, password, passwordConfirmation });
 }
 
 button.addEventListener("click", dados) 
 
 
-const buttonRemove = document.getElementById("register-remove")
+
+
 
 
 buttonRemove.addEventListener("click", () => {
-    button.removeEventListener("click", dados)
+    button.removeEventListener ("click", dados)
+    console.log("evento removido")
 })
