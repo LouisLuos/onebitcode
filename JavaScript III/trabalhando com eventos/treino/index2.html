@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="meu-link" href="https://example.com">Link Ativo</a>
+    <script>
+        const meuLink = document.getElementById("meu-link")
+
+        function alterar (ev) {
+            ev.preventDefault()
+            const target = ev.currentTarget
+            target.textContent = `Link desativado`
+        }
+
+        meuLink.addEventListener("click", alterar)
+
+        function removerLink (ev) {
+            ev.preventDefault()
+            const href = ev.currentTarget
+            href.removeAttribute("href")
+            console.log(href)
+        }
+
+        meuLink.addEventListener("click", removerLink)
+    </script>
+</body>
+</html>

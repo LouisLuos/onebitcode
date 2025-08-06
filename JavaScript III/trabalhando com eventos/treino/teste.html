@@ -15,21 +15,16 @@
     <script>
         const div = document.getElementById("textos")
             
-        div.addEventListener("click", (ev) => {
-             console.log("Alvo (target):", ev.target); // Vai mostrar o <p> clicado
+        function ativaParagrafo (ev) {
+            console.log("Alvo (target):", ev.target); // Vai mostrar o <p> clicado
             console.log("Ouvinte (currentTarget):", ev.currentTarget); // Vai mostrar a <div>
             const divPai = ev.target
             divPai.textContent = `${divPai.textContent} (clicado)`
     
-        })
+        }
 
-        function ativaParagrafo () {
-            div.addEventListener("click", (ev) => {
-             console.log("Alvo (target):", ev.target); // Vai mostrar o <p> clicado
-            console.log("Ouvinte (currentTarget):", ev.currentTarget); // Vai mostrar a <div>
-            const divPai = ev.target
-            divPai.textContent = `${divPai.textContent} (clicado)`
-        })}
+        div.addEventListener("click", ativaParagrafo)
+
 
     </script>
 </body>
