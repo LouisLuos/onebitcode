@@ -10,4 +10,4 @@ try {
     console.log(error.message)
 } finally {
     console.log('Calculations finished.')
-}
+} throw error 
