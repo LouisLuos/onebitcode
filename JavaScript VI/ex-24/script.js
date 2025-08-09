@@ -29,6 +29,7 @@ function calculoPessoa (func) {
     })
 }
 
+
 calculoImc(1.63, 230).then((resultado) => {
     calculoPessoa(resultado).then((log) => {
         console.log(log)
