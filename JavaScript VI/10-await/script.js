@@ -6,8 +6,12 @@ async function asyncSum(a, b) {
 }
 
 async function nome() {
-    const soma = await(asyncSum(10, 20))
-    console.log(soma)
+    try {
+        const soma = await(asyncSum(10, "a"))
+        console.log(soma) 
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 nome()
