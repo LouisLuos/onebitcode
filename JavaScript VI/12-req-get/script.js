@@ -15,7 +15,7 @@ function createCountryCard(country) {
 }
 
 async function getCountries() {
-  const response = await fetch('https://restcountries.com/v3.1/region/europe')
+  const response = await fetch('https://restcountries.com/v3.1/translation/eu')
   const countries = await response.json()
 
   console.log(countries)
