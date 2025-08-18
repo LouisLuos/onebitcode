@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "luiz"
+    },
+    {
+      "id": "2",
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "luiz"
+    },
+    {
+      "id": "c158",
+      "title": "hoje eu vou resolver um exercicio final",
+      "author": "luiz",
+      "content": "é dificil emmm"
+    },
+    {
+      "id": "4cd3",
+      "title": "",
+      "author": "",
+      "content": ""
+    },
+    {
+      "id": "9f2a",
+      "title": "",
+      "author": "",
+      "content": ""
+    },
+    {
+      "id": "7cfd",
+      "title": "",
+      "author": "",
+      "content": ""
+    },
+    {
+      "id": "a61f",
+      "title": "",
+      "author": "",
+      "content": ""
+    },
+    {
+      "id": "8154",
+      "title": "",
+      "author": "",
+      "content": ""
+    }
+  ]
+}
