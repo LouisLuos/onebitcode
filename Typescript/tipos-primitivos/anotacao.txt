@@ -1,0 +1,15 @@
+Tipos primitivos TS:
+
+
+
+let comida: string = "feijão"
+
+let numero: number = 10
+
+let boleano: boolean = false
+
+Arrays:
+
+let array: number[] = 1, 2, 3...
+
+let arrayTwo: string[] = "tijolo", "tijolinho", "tijolão"
