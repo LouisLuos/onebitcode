@@ -38,4 +38,18 @@ function exibirTodosPlanetas() {
     var allPlanets = planets.forEach(function (planeta) { return console.log(planeta); });
     return allPlanets;
 }
+function removerSatelite(nomePlaneta, satelite) {
+    var planetaAtual = planets.find(function (planet) { return planet.nome === nomePlaneta; });
+    if (planetaAtual) {
+        var sateliteRemover = planetaAtual.satelites.findIndex(function (sat) { return sat === satelite; });
+        if (sateliteRemover !== -1) {
+            planetaAtual.satelites.splice(sateliteRemover, 1);
+        }
+        else {
+            console.log("Satelite não encontrado");
+        }
+        console.log(planetaAtual);
+    }
+}
+removerSatelite("Terra", "Lua");
 exibirTodosPlanetas();

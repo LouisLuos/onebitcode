@@ -57,4 +57,21 @@ function exibirTodosPlanetas(){
     return allPlanets
 }
 
-exibirTodosPlanetas()
+function removerSatelite(nomePlaneta: string, satelite: string){
+    const planetaAtual = planets.find((planet) => planet.nome === nomePlaneta)
+    if(planetaAtual) {
+        const sateliteRemover = planetaAtual.satelites.findIndex((sat: string) => sat === satelite)
+        if (sateliteRemover !== -1){
+            planetaAtual.satelites.splice(sateliteRemover, 1)
+        } else {
+            console.log("Satelite não encontrado")
+        }
+        
+        console.log(planetaAtual)
+    }
+ }
+
+
+ removerSatelite("Terra", "Lua")
+
+ exibirTodosPlanetas()
