@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "outDir": "/dist"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
