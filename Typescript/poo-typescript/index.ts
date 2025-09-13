@@ -23,7 +23,8 @@ class Spaceship {
 }
 
 class Fighter extends Spaceship {
-  weapons: number
+  weapons: number = 0
+
 
   shoot() {
     for (let i = 0; i < this.weapons; i++) {
