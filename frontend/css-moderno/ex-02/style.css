@@ -1,0 +1,13 @@
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.box {
+    width: 12rem;
+    height: 12rem;
+    flex-grow: 1;
+    flex-basis: 1;
+    flex: basis 1rem; 
+}

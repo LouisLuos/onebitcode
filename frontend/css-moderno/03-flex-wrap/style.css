@@ -6,29 +6,17 @@ body {
 
 .flex-container {
   display: flex;
-
-  /* as propriedades são baseadas na direção, ao mudar a direção o comportamento também muda */
-  /* flex-direction: column; */
-  /* height: 32rem; */
+  flex-wrap: wrap;
 }
 
 .flex-item {
-  width: 10rem;
-  /* flex-grow flex-shrink flex-basis */
-}
-
-.box.red {
+  flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 15rem;
 }
 
 .box.yellow {
-  flex-grow: 1  ; /* valor padrão */
-  flex-shrink: 0; /* valor padrão */
-}
-
-.box.blue {
-  flex: 1 0 10rem;
+  /* flex: 0 1; */
 }
 
 /* Estilos auxiliares */
@@ -36,6 +24,8 @@ body {
 .box {
   background-color: #4547c7;
   border: 2px solid #272727;
+  min-height: 10rem;
+  min-width: 10rem;
 }
 
 .box.red {
@@ -44,10 +34,10 @@ body {
 
 .box.yellow {
   background-color: #f9ff58;
-  height: 5rem;
+  height: 20rem;
 }
 
 .box.blue {
   background-color: #5255eb;
-  height: 3rem;
+  height: 20rem;
 }

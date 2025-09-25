@@ -1,11 +1,8 @@
 class Spaceship {
-  private _name: string
+   _name: string
   protected captain: string
    speed: number
 
-  get name() {
-    return this._name
-  }
 
   set name(name: string) {
     this._name = name
@@ -42,3 +39,4 @@ let ship = new Spaceship('USS Enterprise', 'James T. Kirk')
 
 ship.speed = 50
 ship.accelerate(50, 10)
+ship.name("aaa")
