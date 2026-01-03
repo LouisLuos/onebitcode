@@ -2,7 +2,7 @@ function execute() {
     return new Promise((resolve, reject) => {
         console.log('A promise está sendo executada.')
         setTimeout(() => {
-            if (2 === 1) {
+            if (2 === 1){
                 reject('1 + 1 não é igual a 2')
                 
             } else {

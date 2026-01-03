@@ -1,9 +1,13 @@
+// pedente - pedding
+// resolvid - resolved
+// rejeitada - reject
+
 function execute() {
     return new Promise((resolve, reject) => {
         console.log('A promise está sendo executada.')
         setTimeout(() => {
             console.log('Resolvendo a promise...')
-            resolve('Resultado')
+            resolve('tramb')
         }, 3 * 1000)
     })
 }
