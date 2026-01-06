@@ -1,31 +1,43 @@
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
+
+
+
 
 h1 {
-    display: block;
-    margin: 20px;
-}
-    
-ul > li {
-    padding: 40px;
-    width: 300px;
-    height: 200px;
-    margin: 20px;
-    display: inline-block;
-    color: white;
-    border: 4px solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: 10px;
+    padding: 2rem;
 }
 
+.box {
+    padding: 1rem;
+    background-color: rgb(28, 26, 26);
+    color: white;
+    border: solid 1px;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    height: 15rem;
+    display: inline-block;
+}
 
 .hidden {
     display: none;
 }
 
 .select {
-    border: 4px solid rgb(33, 33, 255);
-    
+    padding: 1rem;
+    background-color: rgb(28, 26, 26);
+    color: white;
+    border: solid 5px;
+    border-color: rgb(62, 62, 174);
+    margin: 1rem;
+    margin-left: 1.5rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    height: 15rem;
+    display: inline-block;
 }

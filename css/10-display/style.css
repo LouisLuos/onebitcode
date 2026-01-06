@@ -1,4 +1,4 @@
-/* inline: não quebra de linha, largura mínima, apenas aceita margem e preenchimento horizontal */
+/* inline: não quebra de linha, largura mínima, apenas aceita margem horizontal */
 .inline {
     display: inline;
     margin-top: 100px;
