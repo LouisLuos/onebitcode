@@ -16,7 +16,7 @@ body {
   grid-template-rows: 4rem 10rem 10rem 4rem;
   grid-template-columns: 8rem 1fr 1fr 1fr;
   grid-template-areas:
-    "cabecalho cabecalho cabecalho cabecalho"
+    "cabecalho cabecalho cabecalho cabecalho"  
     "sidebar   conteudo  conteudo  conteudo"
     "sidebar   conteudo  conteudo  conteudo"
     "rodape    rodape    rodape    rodape";
