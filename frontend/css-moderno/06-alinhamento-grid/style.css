@@ -1,4 +1,4 @@
- body {
+body {
   background-color: #2c2c2d;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -21,7 +21,7 @@
   align-content: start;
   align-items: start;
   justify-content: center;
-  justify-items: end;
+  justify-items: end;   
 }
 
 .grid-item {
