@@ -1,0 +1,88 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-color: rgb(48, 48, 48);
+   color: white;
+}
+
+header {
+   grid-column: span 3;
+   grid-row: span 1;
+   text-align: center;
+   padding: 1rem;
+   padding-bottom: 3rem;
+   border-bottom: solid 1px white;
+   margin-bottom: 0.8rem;
+}
+
+main {
+   grid-column: 2 / 4;
+   grid-row: 3 / 9;
+}
+
+section {
+   margin-bottom: 2rem;
+}
+header h1 {
+   margin-bottom: 1rem;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(31, 169, 121);
+}
+
+nav a {
+   padding: 1rem;
+}
+
+.page-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: repeat(12, 10rem);
+   margin: 0 15rem 0 15rem;
+}
+
+.intro {
+   grid-column: 2 / 4;
+   grid-row: 2;
+   padding: 0 1rem 1.5rem 0rem;
+   margin-bottom: 1rem;
+}
+
+.intro h2 {
+   margin-bottom: 1rem;
+}
+
+.blog-posts {
+   grid-column: 2 / 4;
+   grid-row: 3 / 13;
+}
+
+.post {
+   grid-row: 1fr;
+   grid-column: 1fr 1fr;
+}
+
+.sidebar {
+   grid-column: 1;
+   grid-row: 2;
+   padding: 2rem;
+   
+}
+
+.widget {
+   grid-column: 1;
+   grid-row: 3;
+}
+
+
+footer {
+   grid-column: 1 / 4;
+   grid-row: 9;
+   text-align: center;
+   
+}
