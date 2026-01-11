@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: .3fr 5fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(41, 122, 209);
+    padding: 1rem;
+    color: #fff;
+}
+
+.content {
+    grid-area: content;
+    background-color: #dcdcdc;
+    padding: 1rem;
+}
+
+.stats-section {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: .125rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+}
+
+.card > h3 {
+    color: rgb(41, 122, 209);
+}
+
+.sidebar {
+    padding: 1rem;
+    font-size: 0.8rem;
+
+    grid-area: sidebar;
+    background-color: rgb(30, 30, 30);
+}
+
+.sidebar > ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+.sidebar > ul > li {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+
+.charts {
+    display: grid;
+    grid-template-areas: 
+    "grafico1 grafico2 grafico3"
+    "grafico4 grafico4 grafico4"
+    ;
+    height: 50vh;
+    
+}
+
+.charts > * {
+    margin: 1rem;
+    background-color: #9b9b9b;
+}
+
+.chart-section  {
+    grid-area: header;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+#chart1 {
+    grid-area: grafico1;
+    margin: 1rem;
+    justify-items: center;
+}
+
+#chart2 {
+    grid-area: grafico2;
+}
+#chart3 {
+    grid-area: grafico3;
+}
+#chart4 {
+    grid-area: grafico4;
+}
+
+.chart-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(41, 122, 209);
+    place-content: center center;
+    justify-items: center;
+    padding: 0.4rem;
+    
+}
+
+
+.table-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 6;
+    background-color: white;
+}
+
+table {
+    margin-left: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+th {
+    background-color: rgb(41, 122, 209);
+}
+
+thead {
+    background-color: rgb(41, 122, 209);
+}
+
+
+
+td {
+    padding: 0.5rem;
+    border-bottom: 1px #c2c2c2 solid;
+}
+
