@@ -138,6 +138,7 @@ footer {
 }
 
 table {
+    border-collapse: collapse;
     margin-left: 1rem;
     text-align: center;
     padding: 1rem;
