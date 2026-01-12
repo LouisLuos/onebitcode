@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 0.1rem;
+    font-weight: 700;
+    color: white;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    padding: 1rem;
+}
+
+.navbar {
+    text-align: left;
+    background-color: #3e3e3e;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+@media screen and (min-width: 769px) {
+    body {
+        text-decoration: none;
+    }
+    section {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+    }
+}
