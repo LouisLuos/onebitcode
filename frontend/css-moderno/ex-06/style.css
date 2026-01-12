@@ -1,0 +1,60 @@
+:root {
+    --fundo-branco: #ffffff;
+    --Fundo-claro:   #e0e0e0;
+    --cor-principal: #6c63ff;
+    --fundo-escuro:  #2c2c2e;
+    --fundo-preto:   #070707;
+    --preenchimento-s: 1rem;
+    --preenchimento-m: 2rem;
+    --preenchimento-l: 4rem;
+    --preenchimento-xl: 6rem;
+}
+
+body {
+    background-color: var(--Fundo-claro);
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #070707;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%);
+
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  
+ 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+    position: absolute;
+    padding: var(--preenchimento-m);
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.3em;
+    background-color: var(--fundo-branco);
+    border-radius: .5em;
+}
+
