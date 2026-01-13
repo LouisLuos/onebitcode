@@ -8,10 +8,23 @@
     --preenchimento-m: 2rem;
     --preenchimento-l: 4rem;
     --preenchimento-xl: 6rem;
+
+    --cor-background: var(--Fundo-claro);
+    --cor-card: var(--fundo-branco);
+    --cor-texto: var(--fundo-preto);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-background: var(--fundo-preto);
+        --cor-card: var(--fundo-escuro);
+        --cor-texto: var(--Fundo-claro);
+    }
 }
 
 body {
-    background-color: var(--Fundo-claro);
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
     font-size: 1rem;
     padding: 0;
     margin: 0;
@@ -21,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #070707;
+    color: var(--cor-texto);
 }
 
 #image-hero {
@@ -29,14 +42,11 @@ a {
     height: 100vh;
     object-fit: cover;
     filter: brightness(50%);
-
 }
 
 .hero {
   height: 100vh;
   width: 100%;
-  
- 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -81,7 +91,7 @@ a {
     padding: 2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
-    background-color: var(--fundo-branco);
+    background-color: var(--cor-card);
 }
 
 .speaker-card img {
@@ -89,7 +99,6 @@ a {
     height: 10rem;
     border-radius: 10rem;
 }
-
 
 .schedule {
     display: flex;
@@ -107,12 +116,11 @@ a {
 }
 
 .schedule-item {
-    background-color: var(--fundo-branco);
+    background-color: var(--cor-card);
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
 }
-
 
 .newsletter-grid {
     display: grid;
@@ -133,9 +141,8 @@ a {
 }
 
 .newsletter-text p {
-    color: var(--fundo-branco);
+    color: var(--cor-texto);
 }
-
 
 .form-group {
     display: flex;
@@ -158,7 +165,6 @@ a {
 }
 
 .footer {
-    
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -170,4 +176,6 @@ a {
     align-self: center;
 }
 
-
+@media screen and (min-width: 1080px) {
+    
+}
