@@ -24,7 +24,7 @@ a {
     color: #070707;
 }
 
-img {
+#image-hero {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -58,12 +58,116 @@ img {
     color: var(--Fundo-claro);
     border-radius: .5em;
     display: inline-block;
+    border-style: none;
 }
 
 .speakers {
+    align-items: center;
     text-align: center;
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction:column ;
 }
+
+.speakers-grid {
+    display: grid;
+    grid-template-areas: 
+    "speaker1"
+    "speaker2"
+    "speaker3";
+}
+
+.speaker-card {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: var(--fundo-branco);
+}
+
+.speaker-card img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+}
+
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.schedule-grid {
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4";
+}
+
+.schedule-item {
+    background-color: var(--fundo-branco);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+
+.newsletter-grid {
+    display: grid;
+    grid-template-areas:
+    "img"
+    "content" ;
+    text-align: center;
+}
+
+.newsletter-image > img {
+    width: 20rem;
+    background-size: cover;
+    height: 20rem;
+}
+
+.newsletter-text {
+    grid-area: content;
+}
+
+.newsletter-text p {
+    color: var(--fundo-branco);
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1.0rem;
+    border-style: none;
+}
+
+.form-group label {
+    padding: 1rem;
+}
+
+.footer {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer .btn {
+    align-self: center;
+}
+
 
