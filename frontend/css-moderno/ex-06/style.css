@@ -63,12 +63,13 @@ a {
 
 .btn {
     margin-top: 1rem;
-    padding: 0.7em;
+    padding: 0.7em 1.5em;
     background-color: var(--cor-principal);
     color: var(--Fundo-claro);
     border-radius: .5em;
     display: inline-block;
     border-style: none;
+    cursor: pointer;
 }
 
 .speakers {
@@ -108,6 +109,7 @@ a {
 }
 
 .schedule-grid {
+    display: grid;
     grid-template-areas: 
     "item1"
     "item2"
@@ -128,6 +130,11 @@ a {
     "img"
     "content" ;
     text-align: center;
+    align-items: center;
+}
+
+.newsletter-image {
+    grid-area: img;
 }
 
 .newsletter-image > img {
@@ -144,6 +151,12 @@ a {
     color: var(--cor-texto);
 }
 
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -158,10 +171,11 @@ a {
     height: 3rem;
     border-radius: 1.0rem;
     border-style: none;
+    padding: 0 1rem;
 }
 
 .form-group label {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .footer {
@@ -176,6 +190,40 @@ a {
     align-self: center;
 }
 
-@media screen and (min-width: 1080px) {
-    
+@media screen and (min-width: 769px) {
+    .speakers-grid {
+        grid-template-areas: "speaker1 speaker2 speaker3";
+    }
+
+    .speaker-card {
+        width: 23vw;
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .schedule-grid {
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4";
+        width: 90vw;
+    }
+
+    .newsletter-grid {
+        grid-template-areas: "img content";
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        padding: var(--preenchimento-l);
+    }
+
+    .newsletter-form {
+        align-items: flex-start;
+    }
+
+    .form-group {
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        padding-left: 0;
+    }
 }
