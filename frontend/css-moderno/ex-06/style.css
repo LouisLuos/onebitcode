@@ -53,8 +53,17 @@ img {
 
 .btn {
     margin-top: 1rem;
-    padding: 0.3em;
-    background-color: var(--fundo-branco);
+    padding: 0.7em;
+    background-color: var(--cor-principal);
+    color: var(--Fundo-claro);
     border-radius: .5em;
+    display: inline-block;
+}
+
+.speakers {
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
 }
 
