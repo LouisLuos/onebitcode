@@ -1,0 +1,29 @@
+/* styleCard.module.css */
+
+.background {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Alinha imagem e texto lado a lado */
+    align-items: center; /* Centraliza verticalmente os itens */
+    background-color: rgb(218, 211, 211);
+    width: 45rem; /* Aumentei um pouco a largura para caber o texto ao lado */
+    height: 20rem;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    border: 1px solid rgb(215, 207, 207);
+    font-family: sans-serif;
+}
+
+.img {
+    height: 100%; /* Faz a imagem ocupar a altura disponível do card */
+    width: auto;
+    border-radius: 0.4rem;
+    margin-right: 2rem; /* Espaço entre a imagem e o texto */
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Garante que o texto fique empilhado */
+    justify-content: center;
+}
