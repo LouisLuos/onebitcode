@@ -1,17 +1,17 @@
 import styles from "./styleCard.module.css"
 
-export default function Card () {
+export default function Card (props) {
     return (
         <div className={styles.background}>
             <img 
                 className={styles.img} 
-                src="https://i.pinimg.com/originals/ba/94/64/ba9464145eba8762f6286a3c8387c951.jpg" 
+                src={props.poster} 
                 alt="Poster Star Wars" 
             />
             
             <div className={styles.content}>
                 <h1 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-                    Pôster: Star Wars (1977)
+                    {props.tittle}
                 </h1>
                 <p>
                     Um pôster decorativo épico do filme Star Wars, com moldura de MDF 
