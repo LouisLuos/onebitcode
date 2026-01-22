@@ -1,4 +1,5 @@
 import styles from "./styleContainer.module.css"
+import Tittle from "../Tittle/Tittle"
 
 // Mantive exatamente os seus nomes de props
 function Card({imgProfile, tittleName, descriptonCard, phone, email}) {
@@ -8,7 +9,12 @@ function Card({imgProfile, tittleName, descriptonCard, phone, email}) {
             <img className={styles.imgProfile} src={imgProfile} alt="" />
             
             {/* Usando as chaves {} para o texto aparecer */}
-            <h1 className={styles.tittleName}>{tittleName}</h1>
+            
+            <Tittle>
+                {tittleName}
+                <span><button>Me Siga</button></span>  
+            </Tittle>   
+            
             
             <p className={styles.descriptonCard}>{descriptonCard}</p>
             <p className={styles.descriptonCard}>{phone}</p>
