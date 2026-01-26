@@ -1,11 +1,10 @@
 import { useState } from "react"
 
-export default function useCopy () {
+export default function useCopy() {
     const [copy, setCopy] = useState("Copiar")
+    
+    const copiarSenha = () => setCopy("Copiado")
+    const resetarStatus = () => setCopy("Copiar")
 
-    const copiarSenha = () => {
-        setCopy("Copiado")
-    }
-
-    return [copy, copiarSenha]
+    return [copy, copiarSenha, resetarStatus]
 }
