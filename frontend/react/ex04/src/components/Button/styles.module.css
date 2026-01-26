@@ -1,0 +1,15 @@
+
+
+.buttonStyle {
+    border: 1px solid white;
+    border: 1rem;
+    border-radius: 1rem;
+    width: 8em;
+    height: 2em;
+    
+}
+
+.buttonStyle:active{
+    transform: scale(0.97); /* Reduz levemente o tamanho */
+  background-color: #ccc;
+}

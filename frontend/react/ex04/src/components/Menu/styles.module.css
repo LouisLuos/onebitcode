@@ -1,0 +1,20 @@
+body {
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+
+.menu {
+    display: grid;
+    place-content: center;
+    background-color: #3e3e3e;
+    width: 50vw;
+    height: 50vh;
+}
+
+.containerButton {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
