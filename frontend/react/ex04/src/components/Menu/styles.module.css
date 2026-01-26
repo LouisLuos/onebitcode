@@ -3,6 +3,18 @@ body {
     display: grid;
     place-content: center;
     color: white;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 1rem;
+    font-size: 2.0rem;
 }
 
 .menu {
@@ -15,6 +27,6 @@ body {
 
 .containerButton {
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     justify-content: center;
 }

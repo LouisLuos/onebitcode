@@ -8,10 +8,7 @@ function App() {
 
   return (
     <>  
-    <Menu>
-
-
-    </Menu>
+    <Menu></Menu>
     </>
   )
 }
