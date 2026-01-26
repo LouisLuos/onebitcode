@@ -17,7 +17,7 @@ export default function Profile(props) {
         className={styles.followButtom}
         onClick={Click}
         
-        >Follow</button>
+        >Seguir</button>
       </Title>
       <ProfileSection>{props.bio}</ProfileSection>
       <ProfileSection>{props.phone}</ProfileSection>
