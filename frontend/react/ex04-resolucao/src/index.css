@@ -36,7 +36,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+button, input {
   margin: 2rem;
   border-radius: 8px;
   border: 1px solid transparent;
