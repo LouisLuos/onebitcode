@@ -32,7 +32,7 @@ function App() {
         <label htmlFor="showInput">Customizar tamanho:</label>
         <input
           type="checkbox"
-          id="showInput"
+          id="showInput"  
           value={showInput}
           onChange={() => setShowInput(show => !show)}
         />
