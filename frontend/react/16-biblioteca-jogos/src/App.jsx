@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Game from "./components/Game"
+import NewGameForm from "./components/NewGameForm"
 
 function App() {
   const [games, setGames] = useState(() => {
@@ -7,15 +8,9 @@ function App() {
     if (!storedGames) return []
     return JSON.parse(storedGames)
   }) 
-  const [title, setTitle] = useState("")
-  const [cover, setCover] = useState("")
+  
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault()
-    addGames({ title, cover})
-    setTitle("")
-    setCover("")
-  }
+  
 
   const removeGame = (id) => {
   setGames(state => {
@@ -38,17 +33,7 @@ function App() {
   return (
     <div className="app">
       <h1>Biblioteca de Jogos</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="title">Título:</label>
-          <input type="text" id="title" value={title} onChange={(e) => setTitle(e.target.value)}/>
-        </div>
-        <div>
-          <label htmlFor="cover">Capa:</label>
-          <input type="text" id="cover" value={cover} onChange={(e) => setCover(e.target.value)} />
-        </div>
-        <button>Adicionar</button>
-      </form>
+      <NewGameForm addGames={addGames} />
       <div className="games">
         {games.map((game) => (
           <Game
