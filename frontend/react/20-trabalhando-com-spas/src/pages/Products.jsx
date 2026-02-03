@@ -1,8 +1,11 @@
-import products from "../database.json"
+import Header from "../components/header";
+import products from "../database.json";
+
 
 export default function Products() {
   return (
     <section>
+      
       <h2>Todos os produtos</h2>
       <p>Confira todas as nossas ofertas.</p>
       <section className="products">
@@ -19,5 +22,5 @@ export default function Products() {
         </ul>
       </section>
     </section>
-  )
+  );
 }

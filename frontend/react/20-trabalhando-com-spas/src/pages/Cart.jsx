@@ -1,6 +1,10 @@
+
+import Header from "../components/header";
+
 export default function Cart() {
   return (
     <section>
+      
       <h2>Carrinho</h2>
       <p>Os produtos atualmente em seu carrinho.</p>
       <ul>
@@ -13,5 +17,5 @@ export default function Cart() {
       </ul>
       <button>Finalizar compra</button>
     </section>
-  )
+  );
 }
