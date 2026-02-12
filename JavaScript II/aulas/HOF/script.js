@@ -6,7 +6,7 @@ function exibirElemento (fruta, indice, lista) {
         fruta,
         indice,
         lista
-    })
+    }) 
 }
 
 
