@@ -1,0 +1,18 @@
+.page {
+  background-color: #232323;
+  color: #f1f1f1;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.main {
+  border: 1px solid #f1f1f1;
+  border-radius: .5rem;
+  display: grid;
+  padding: 2rem;
+}
