@@ -6,9 +6,12 @@ const namedArguments = {}
 
 process.argv.slice(2).forEach((arg, index, arr) => {
     if(arg.startsWith("--")) {
-    const argName = arg.slice(2)   
+        console.log(arg)
+    const argName = arg.slice(2)
+    console.log(argName)   
     const argValue = arr[index + 1]
     namedArguments[argName] = argValue
+    console.log(namedArguments)
     }
 })
 
