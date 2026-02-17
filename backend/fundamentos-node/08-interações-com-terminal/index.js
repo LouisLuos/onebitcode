@@ -14,17 +14,17 @@ const rl = readLine.createInterface({
 
 // rl.on("line", (input) => rl.write(`Você digitou: ${input}`) )
 
-// rl.question("Qual capital da lua?", (anws) => {
-//     rl.write("Capital da lua é " + anws)
-//     rl.close()
+rl.question("Qual capital da lua?", (anws) => {
+    rl.write("Capital da lua é " + anws)
+    rl.close()
 
-// })
+})
 
-// rl.on("close", () => {
-//     rl.write("\nPrograma encerrado")
-//     //process.exit(0)
+rl.on("close", () => {
+    rl.write("\nPrograma encerrado")
+    //process.exit(0)
     
-// })
+})
 
 rl.on("SIGINT", () => {
     rl.question("Desjea realmente sair? (s/n)", (answer) => {
