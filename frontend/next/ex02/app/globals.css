@@ -54,3 +54,22 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.site-logo {
+  display: block;
+  font-family: var(--font-playfair-display);
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+header {
+  border-bottom: 1px solid #777;
+  padding: 2rem;
+}
