@@ -1,4 +1,4 @@
-let posts = []
+let posts = [{id: "1", title: "teste", content: "testinho", createdAt: new Date(), updatedAt: new Date()}]
 
 const postModel = {
     getAllPosts() {
@@ -15,7 +15,7 @@ const postModel = {
             title: title,
             content: content,
             createdAt: new Date(),
-            updateAt: new Date()            
+            updatedAt: new Date()            
         }
         return post
     },
