@@ -28,6 +28,10 @@ app.post('/games/:id/genres', gamesController.addGenre)
 
 app.put('/games/:id', gamesController.update)
 
+app.delete('/games/:id/genres/:genre', gamesController.deleteGen)
+
+app.delete('/games/:id', gamesController.delete)
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)
