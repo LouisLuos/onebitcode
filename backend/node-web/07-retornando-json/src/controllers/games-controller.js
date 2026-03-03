@@ -47,13 +47,54 @@ module.exports = {
         res.status(201)
         res.json(newGame)
     }
-    }
+    },
 
-
-
-    
     // PUT /games/:id
+
+    update: (req, res) => {
+        const { id } = req.params
+        const { name, year } = req.body
+
+        const gameIndex = games.findIndex(game => game.id === Number(id))
+
+        if (gameIndex === -1) {
+            return res.status(404).json({ message: 'Game not found' })
+        }
+
+        if (typeof name === 'string') {
+            games[gameIndex].name = name
+            return res.status(200).json(games[gameIndex])
+        }
+
+        if (typeof year === 'number') {
+            games[gameIndex].year = year
+            return res.status(200).json(games[gameIndex])
+        }
+    },
 
     // DELETE /games/:id
   
+
+
+    // POST /games/:id/genres
+
+    addGenre: (req, res) => {
+        const { id } = req.params
+        const { genre } = req.body
+
+        const gameIndex = games.findIndex(game => game.id === Number(id))
+        if (gameIndex === -1) {
+            return res.status(404).json({ message: 'Game not found' })
+        }
+
+        if (typeof genre !== 'string' || games[gameIndex].genres.includes(genre)) {
+            return res.status(400).json({ message: 'Genre is invalid' })
+        }
+
+        games[gameIndex].genres.push(genre) 
+        res.status(201)
+
+        res.json(games[gameIndex])
+    
+    }
 }
