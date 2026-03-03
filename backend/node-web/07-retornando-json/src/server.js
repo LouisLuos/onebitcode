@@ -11,6 +11,9 @@ const games = [
   { id: 5, name: 'Age of Empires 2', genres: ['real-time-strategy'], year: 1999 }
 ]
 
+app.use(express.json())
+
+
 app.get('/', (req, res) => {
   res.json({ message: "Helo word"})
 })
@@ -18,6 +21,8 @@ app.get('/', (req, res) => {
 app.get('/games', gamesController.index)
 
 app.get('/games/:id', gamesController.show)
+
+app.post('/games', gamesController.save)
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`)

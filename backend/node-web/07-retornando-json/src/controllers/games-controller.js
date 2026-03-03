@@ -28,10 +28,30 @@ module.exports = {
             res.status(200)
             res.json(game)
         }
-    }
+    },
 
     // POST /games
+    
+    save: (req, res) => {
+        const { name, genres, year } = req.body
+        if (!name || !genres || !year) {
+            res.status(404)
+        } else {
+        const newGame = {
+            id: games.length + 1,
+            name: name,
+            genres: genres,
+            year: year,
+        }
+        games.push(newGame)
+        res.status(201)
+        res.json(newGame)
+    }
+    }
 
+
+
+    
     // PUT /games/:id
 
     // DELETE /games/:id
